@@ -1,21 +1,23 @@
 # 🏠 Housing Price Prediction using Regression Models
 
-## 📌 Project Overview
+## 📌 Overview
 
-This project explores how different regression models perform in predicting housing prices using a dataset similar to the Boston Housing dataset. The main goal is to compare **Linear Regression, Ridge Regression, and Lasso Regression** and understand how regularization affects model performance.
+This project explores how different regression models perform in predicting housing prices using a dataset similar to the Boston Housing dataset. The goal is to compare **Linear Regression, Ridge Regression, and Lasso Regression** and analyze how regularization impacts performance.
 
 ---
 
 ## 🎯 Objective
 
-To build and evaluate multiple regression models and compare their performance using common evaluation metrics like MSE, RMSE, MAE, and R² score.
+* Build multiple regression models
+* Evaluate performance using standard metrics
+* Compare results to identify the best model for prediction
 
 ---
 
 ## 📂 Dataset
 
-* Source: [Housing Dataset](https://raw.githubusercontent.com/jbrownlee/Datasets/master/housing.data)
-* The dataset has no headers, so column names are manually assigned.
+* Source: https://raw.githubusercontent.com/jbrownlee/Datasets/master/housing.data
+* No headers included, so column names were manually assigned
 * Target variable: **MEDV (Median House Value)**
 
 ---
@@ -30,12 +32,20 @@ To build and evaluate multiple regression models and compare their performance u
 
 ## 📊 Evaluation Metrics
 
-The models are evaluated using:
-
 * Mean Squared Error (MSE)
 * Root Mean Squared Error (RMSE)
 * Mean Absolute Error (MAE)
 * R² Score
+
+---
+
+## 📈 Results
+
+| Model             | MSE     | RMSE   | R² Score | MAE    |
+| ----------------- | ------- | ------ | -------- | ------ |
+| Linear Regression | 24.2911 | 4.9286 | 0.6688   | 3.1891 |
+| Ridge Regression  | 24.4772 | 4.9474 | 0.6662   | 3.1329 |
+| Lasso Regression  | 24.4095 | 4.9406 | 0.6671   | 3.2535 |
 
 ---
 
@@ -48,42 +58,35 @@ The models are evaluated using:
 
 ---
 
-## 🚀 How to Run This Project
-
-1. Clone the repository:
+## 🚀 How to Run
 
 ```bash
 git clone https://github.com/alexemonhalder/housing-price-prediction-regression
 cd housing-price-prediction-regression
-```
-
-2. Install dependencies:
-
-```bash
 pip install -r requirements.txt
-```
-
-3. Run the notebook or script:
-
-```bash
 jupyter notebook
 ```
 
----
+Open:
 
-## 📈 What I Learned
-
-* How different regression models behave on real-world datasets
-* The impact of regularization (Ridge & Lasso)
-* How to evaluate and compare machine learning models properly
-* Building a clean ML pipeline from scratch
+```
+housing_price_prediction_regression.ipynb
+```
 
 ---
 
-## 🤝 Conclusion
+## 📌 Key Insights
 
-This project helped me understand not just how to build models, but how to compare them meaningfully. Among the models tested, each has its strengths depending on how the data behaves.
+* All three models perform very similarly
+* Linear Regression slightly outperforms others in R² score
+* Regularization (Ridge/Lasso) has minimal impact on this dataset
 
 ---
 
-⭐ If you like this project, feel free to star the repository!
+## 🧾 Conclusion
+
+This project shows how regression models behave on real-world data. While Linear Regression performed slightly better, Ridge and Lasso help understand model stability and regularization effects.
+
+---
+
+⭐ If you found this useful, feel free to star the repository!
