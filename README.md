@@ -53,8 +53,8 @@ The models are evaluated using:
 1. Clone the repository:
 
 ```bash
-git clone <your-repo-link>
-cd <your-repo-name>
+git clone https://github.com/alexemonhalder/housing-price-prediction-regression
+cd housing-price-prediction-regression
 ```
 
 2. Install dependencies:
@@ -67,12 +67,6 @@ pip install -r requirements.txt
 
 ```bash
 jupyter notebook
-```
-
-or
-
-```bash
-python main.py
 ```
 
 ---
